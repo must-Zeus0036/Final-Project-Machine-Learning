@@ -88,6 +88,8 @@ The model was trained on the SMS Spam Collection Dataset, which contains labeled
 
 
 🧩 Example Predictions
+
 “You’ve been selected for a free offer.”“Win $500 cash now!” --> prediction  -->  Spam
+
 Hi mom, how are you? Let’s meet for lunch tomorrow. --> prediction --> ham
 
