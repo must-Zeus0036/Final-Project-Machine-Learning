@@ -17,8 +17,8 @@ nltk.download("stopwords")
 with open("rf_model.pkl", "rb") as model_file:
     rf_model = pickle.load(model_file)
 
-with open("tfidf_vectorizer.pkl", "rb") as f:
-    tfidf_vectorizer = pickle.load(f)
+with open("tfidf_vectorizer.pkl", "rb") as model_file:
+    tfidf_vectorizer = pickle.load(model_file)
     
 
 # Define preprocessing function (Must match training pipeline)
@@ -35,8 +35,8 @@ def preprocess_text(text):
     
     tokens = [word for word in tokens if word.isalnum()] #Remove special characters and keep only alphanumeric tokens
 
-    stop_words = set(stopwords.words("english"))#Remove stop words (common words like 'a', 'the', 'is')
-    tokens = [word for word in tokens if word not in stop_words]
+    stop_words_list = set(stopwords.words("english"))#Remove stop words (common words like 'a', 'the', 'is')
+    tokens = [word for word in tokens if word not in stop_words_list]
 
     ps = PorterStemmer() #Apply stemming (reducing words to their root form)
     tokens = [ps.stem(word) for word in tokens]
@@ -50,11 +50,11 @@ app = Flask(__name__)
 def predict():
     data = request.get_json()
     message = data.get("message", "")
-    cleaned = preprocess_text(message)
+    preprocessed_text = preprocess_text(message)
     
     # Transform the cleaned text into numerical features using the loaded tfidf vectorizer
     # The input must be a list of strings: [cleaned]
-    vectorized = tfidf_vectorizer.transform([cleaned])
+    vectorized = tfidf_vectorizer.transform([preprocessed_text])
     
     #Make the prediction using the Random Forest model rf_model
     prediction = rf_model.predict(vectorized)[0]
