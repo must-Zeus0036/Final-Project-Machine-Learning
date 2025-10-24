@@ -1,0 +1,6 @@
+### SMS spam and non spam classification
+1. import required libraries
+2. data cleaning
+3. EDA (exploratroy data analysis)
+4. model training on data. build the model
+5. integrate application with streamit and crating a UI
