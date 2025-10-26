@@ -1,4 +1,6 @@
 # 📧 SMS Spam Classification Project
+Mustafa Al-Bayati & Daniel Jönsson
+Kristianstad University
 
 This project uses **Machine Learning** to classify text messages as **Spam** or **Ham (Not Spam)**.  
 It includes a backend built with **Flask** and a simple frontend built with **Streamlit**.
