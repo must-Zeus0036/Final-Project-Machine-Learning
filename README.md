@@ -11,12 +11,19 @@ It includes a backend built with **Flask** and a simple frontend built with **St
 
 After training and evaluating the Logistic Regression model that I implemented from scratch, the model achieved the following results:
 
-Metric	Score
-----------------
-## Accuracy	0.962
-## Precision (Spam = 1)	0.96
-## Recall (Spam = 1)	0.69
-## F1-Score (Spam = 1)	0.81
+_ Logistic Regression (Scratch) Results _
+Accuracy: 0.9622823984526112
+
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.96      1.00      0.98       916
+           1       0.96      0.69      0.81       118
+
+    accuracy                           0.96      1034
+   macro avg       0.96      0.85      0.89      1034
+weighted avg       0.96      0.96      0.96      1034
+
 
 ## Summary:
 
