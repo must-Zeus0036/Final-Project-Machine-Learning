@@ -50,9 +50,16 @@ nltk.download("stopwords")
 
 
 # Load the pre-trained Random Forest model and the TF-IDF vectorizer.
+<<<<<<< HEAD
 with open("rf_model.pkl", "rb") as model_file:
     lr_model = pickle.load(model_file)
 with open("tfidf_vectorizer.pkl", "rb") as model_file:
+=======
+with open("lr_model_scratch.pkl", "rb") as model_file:
+        lr_model = pickle.load(model_file)
+
+with open("tfidf_vectorizer_lr.pkl", "rb") as model_file:
+>>>>>>> f4d6121375ddb3437cc9cbfb1d5854749fc902e9
     tfidf_vectorizer = pickle.load(model_file)
 
         
