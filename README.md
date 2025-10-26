@@ -6,6 +6,24 @@ Kristianstad University
 This project uses **Machine Learning** to classify text messages as **Spam** or **Ham (Not Spam)**.  
 It includes a backend built with **Flask** and a simple frontend built with **Streamlit**.
 
+
+## Model Performance (Logistic Regression from Scratch)
+
+After training and evaluating the Logistic Regression model that I implemented from scratch, the model achieved the following results:
+
+Metric	Score
+----------------
+## Accuracy	0.962
+## Precision (Spam = 1)	0.96
+## Recall (Spam = 1)	0.69
+## F1-Score (Spam = 1)	0.81
+
+## Summary:
+
+The model performed very well, reaching an overall accuracy of 96.2%.
+It can correctly identify most spam messages with high precision and balanced recall.
+These results confirm that a Logistic Regression model built completely from scratch using NumPy can achieve strong and reliable performance for spam detection tasks.
+
 ---
 
 ## Getting Started
