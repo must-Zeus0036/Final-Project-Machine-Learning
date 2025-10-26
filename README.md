@@ -15,6 +15,7 @@ _ Logistic Regression (Scratch) Results _
 Accuracy: 0.9622823984526112
 
 Classification Report:
+
                precision    recall  f1-score   support
 
            0       0.96      1.00      0.98       916
