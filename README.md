@@ -3,13 +3,16 @@ Mustafa Al-Bayati & Daniel Jönsson
 
 Kristianstad University
 
-This project uses **Machine Learning** to classify text messages as **Spam** or **Ham (Not Spam)**.  
-It includes a backend built with **Flask** and a simple frontend built with **Streamlit**.
+This project uses **Machine Learning** to classify text messages as **Spam** or **Ham (Not Spam)**. 
+There is two files in this project the first one is **main.ipynb** we followed the course requirements. 
+Another file is **spam-classifier.ipynb** we did it as end-to-end project includes a **Backend** built with **Flask** and a simple **Frontend** built with **Streamlit**.
 
+Both files tested with different algorithms. 
 
+**Some info** down about the end-to-end project:
 ## Model Performance (Logistic Regression from Scratch)
 
-After training and evaluating the Logistic Regression model that I implemented from scratch, the model achieved the following results:
+After training and evaluating the Logistic Regression model that we implemented from scratch, the model achieved the following results:
 
 _ Logistic Regression (Scratch) Results _
 Accuracy: 0.9622823984526112
@@ -116,7 +119,7 @@ The frontend (streamlit_app.py) allows users to enter messages and get predictio
 The model was trained on the SMS Spam Collection Dataset, which contains labeled examples of spam and ham messages.
 
 
-🧩 Example Predictions
+**Example Predictions**
 
 “You’ve been selected for a free offer.”“Win $500 cash now!” --> prediction  -->  Spam
 
