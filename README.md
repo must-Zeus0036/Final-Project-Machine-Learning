@@ -112,7 +112,7 @@ http://localhost:8501
 
 ## How It Works
 
-The backend (spam_classify.py) loads a trained Random Forest model and TF-IDF vectorizer.
+The backend (spam_classify.py) loads a trained Logistic Regression from Scratch.
 
 The frontend (streamlit_app.py) allows users to enter messages and get predictions in real-time.
 
