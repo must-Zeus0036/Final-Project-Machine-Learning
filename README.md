@@ -31,7 +31,7 @@ weighted avg       0.96      0.96      0.96      1034
 
 ## Summary:
 
-The model performed very well, reaching an overall accuracy of 96.2%.
+The model performed very well, reaching an overall accuracy of 96%.
 It can correctly identify most spam messages with high precision and balanced recall.
 These results confirm that a Logistic Regression model built completely from scratch using NumPy can achieve strong and reliable performance for spam detection tasks.
 
