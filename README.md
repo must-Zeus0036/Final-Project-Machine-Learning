@@ -120,7 +120,8 @@ The model was trained on the SMS Spam Collection Dataset, which contains labeled
 
 
 **Example Predictions**
-![Example](Untitled000.png)
+![Example.ham](Untitled000.png)
+![Example.spam](Untitled11.png)
 
 “You’ve been selected for a free offer.”“Win $500 cash now!” --> prediction  -->  Spam
 
